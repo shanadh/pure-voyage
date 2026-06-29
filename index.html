@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Voyage | Tropical Bliss - Lakshadweep Escape</title>
+    <meta name="description" content="Embark on the ultimate Lakshadweep Escape with Pure Voyage. 3 Days and 4 Nights of Monsoon Bliss in the Lakshadweep Islands starting from ₹10,999. Book your journey today!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Sticky Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">
+                <img src="images/logo.png" alt="Pure Voyage Logo" class="logo-img">
+                <span class="logo-text">Pure Voyage</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#highlights" class="nav-link">Highlights</a>
+                <a href="#itinerary" class="nav-link">Itinerary</a>
+                <a href="#inclusions" class="nav-link">Inclusions</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary nav-cta-btn" id="nav-cta-btn">Book Now</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="Pure Voyage Logo" class="logo-img">
+                <span class="logo-text">Pure Voyage</span>
+            </a>
+            <button class="drawer-close" id="drawer-close" aria-label="Close Menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#hero" class="drawer-link">Home</a>
+            <a href="#highlights" class="drawer-link">Highlights</a>
+            <a href="#itinerary" class="drawer-link">Itinerary</a>
+            <a href="#inclusions" class="drawer-link">Inclusions</a>
+            <a href="#gallery" class="drawer-link">Gallery</a>
+            <a href="#pricing" class="drawer-link">Pricing</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
+        <div class="drawer-footer">
+            <a href="#contact" class="btn btn-primary w-full" id="drawer-cta-btn">Book Now</a>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-wrapper">
+                <img src="images/hero_bg.jpg" alt="Lakshadweep Islands turquoise beach" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in" id="hero-badge">
+                    <i class="fa-solid fa-location-dot"></i> Lakshadweep Islands &bull; Monsoon Special
+                </div>
+                <h1 class="hero-title animate-slide-up" id="hero-title">Tropical Bliss</h1>
+                <h2 class="hero-subtitle animate-slide-up" id="hero-subtitle">Lakshadweep Escape</h2>
+                <div class="hero-meta pkg-monsoon-only animate-fade-in" id="hero-meta-monsoon">
+                    <span class="meta-item"><i class="fa-regular fa-clock"></i> 3 Days / 4 Nights</span>
+                    <span class="meta-item"><i class="fa-solid fa-tags"></i> Starting ₹10,999</span>
+                </div>
+                <div class="hero-meta pkg-normal-only animate-fade-in" id="hero-meta-normal">
+                    <span class="meta-item"><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span>
+                    <span class="meta-item"><i class="fa-solid fa-tags"></i> Price on Request</span>
+                </div>
+                <p class="hero-desc animate-fade-in" id="hero-desc">
+                    Discover the untouched beauty of the Lakshadweep Islands where turquoise waters, soft sandy beaches, and lush landscapes create the perfect escape. Relax, explore, and experience nature at its purest.
+                </p>
+                <div class="hero-actions animate-fade-in" id="hero-actions">
+                    <a href="#pricing" class="btn btn-primary btn-lg">View Package</a>
+                    <a href="#itinerary" class="btn btn-secondary btn-lg">See Itinerary</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator" id="scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Global Package Toggle -->
+        <div class="global-package-toggle" id="package-toggle-bar">
+            <div class="toggle-container">
+                <button class="pkg-btn active" data-pkg="monsoon">
+                    <span class="season-icon"><i class="fa-solid fa-cloud-showers-heavy"></i></span>
+                    <span class="pkg-info">
+                        <strong>Monsoon Package</strong>
+                        <small>June - August &bull; ₹10,999</small>
+                    </span>
+                </button>
+                <button class="pkg-btn" data-pkg="normal">
+                    <span class="season-icon"><i class="fa-solid fa-sun"></i></span>
+                    <span class="pkg-info">
+                        <strong>Normal Package</strong>
+                        <small>September - May &bull; Best Rates</small>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 2. Package Highlights -->
+        <section class="highlights-section" id="highlights">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What We Offer</span>
+                    <h2 class="section-title">Package Highlights</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card" id="highlight-card-accommodation">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+                        <h3>Premium Accommodation</h3>
+                        <p>Relax in highly rated, luxurious hotel & resort rooms selected for supreme comfort.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-transfers">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3>Airport Transfers</h3>
+                        <p>Enjoy prompt, air-conditioned private vehicle pickups and drops from Agatti Airport.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-tours">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+                        <h3>Sightseeing Tours</h3>
+                        <p>Pre-arranged scenic tours covering iconic landmarks, beaches, and historic spots.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-guide">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3>Professional Guide</h3>
+                        <p>An experienced and local expert guide to accompany you and share unique insights.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-meals">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <h3>Daily Breakfast & Meals</h3>
+                        <p>Savor delicious local and global breakfast spreads every morning of your stay.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-islands">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h3>Island Visits</h3>
+                        <p>Visit pristine islands boasting some of Asia's finest natural and exotic beaches.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-boat">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+                        <h3>Boat Ride</h3>
+                        <p>Experience smooth, high-speed boat cruise transfers between the scenic islands.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-water">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-person-swimming"></i>
+                        </div>
+                        <h3>Water Activities</h3>
+                        <p>Access opportunities to explore marine life in clear waters with safety gear.</p>
+                    </div>
+
+                    <div class="highlight-card" id="highlight-card-adventure">
+                        <div class="highlight-icon-wrapper">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <h3>Adventure Activities</h3>
+                        <p>Thrills await with guided activities designed for outdoor enthusiasts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Itinerary Section -->
+        <section class="itinerary-section" id="itinerary">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Day by Day Plan</span>
+                    <h2 class="section-title">Your Lakshadweep Itinerary</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Monsoon Package Itinerary -->
+                <div class="itinerary-timeline pkg-monsoon-only">
+                    <!-- Day 1 Card -->
+                    <div class="itinerary-card" id="itinerary-day-1">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day1.jpg" alt="Agatti Beach Resort checking in">
+                            <div class="day-badge">Day 1</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Arrival & Island Exploration</h3>
+                            <p class="itinerary-subtitle">Airport Pickup & Beach Sunset Walk</p>
+                            <p class="itinerary-desc">
+                                Arrive at Agatti Airport where our representative will welcome you and transfer you to your accommodation. After check-in and briefing, explore the local wonders including Western Jetty, pristine Anthan Beach, and Lagoon Beach. Enjoy a peaceful Agatti Village walk in the evening, followed by dinner.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Airport Pickup & Hotel Check-in</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Visit Western Jetty & Anthan Beach</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Lagoon Beach & Agatti Village Walk Dinner</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Overnight stay at Agatti</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Card -->
+                    <div class="itinerary-card" id="itinerary-day-2">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day2.jpg" alt="Vibrant underwater corals at Agatti Island">
+                            <div class="day-badge">Day 2</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Thrilling Water Activities</h3>
+                            <p class="itinerary-subtitle">Explore The Turquoise Marine Life</p>
+                            <p class="itinerary-desc">
+                                Indulge in an action-packed day of water sports in Agatti's pristine lagoon waters. Dive deep or paddle around to experience the rich marine ecology, green sea turtles, and colorful corals under professional guidance.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> <strong>Snorkelling</strong>: Explore the vibrant underwater world</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> <strong>Kayaking</strong>: Paddle through crystal clear waters</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> <strong>Scuba Diving</strong>: Dive into another world (Optional)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 Card -->
+                    <div class="itinerary-card" id="itinerary-day-3">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day3.jpg" alt="Kalpitty Island boat trip">
+                            <div class="day-badge">Day 3</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Let's Explore Kalpitty Island</h3>
+                            <p class="itinerary-subtitle">Glass Boat Ride Excursion</p>
+                            <p class="itinerary-desc">
+                                Take a boat excursion to the gorgeous Kalpitty Island. Board a specialized glass-bottom boat to peek directly into the marine ecosystem, viewing exotic corals and tropical fishes comfortably without getting wet. Return to Agatti for your farewell dinner.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Boat Transfer to Kalpitty Island</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Glass boatride: Experience marine life through glass bottom</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Dinner and Overnight stay at Agatti</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 Card -->
+                    <div class="itinerary-card" id="itinerary-day-4">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day4.jpg" alt="Farewell sunset checkout at Agatti Airport">
+                            <div class="day-badge">Day 4</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Departure & Farewell</h3>
+                            <p class="itinerary-subtitle">Journey Home With Memories</p>
+                            <p class="itinerary-desc">
+                                Savor your final tropical breakfast at the accommodation. Complete your check-out process, pack your bags, and proceed to Agatti Airport for your departure flight back home.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Morning Checkout after breakfast</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Direct Transfer to Agatti Airport</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Normal Package Itinerary -->
+                <div class="itinerary-timeline pkg-normal-only">
+                    <!-- Day 1 Card -->
+                    <div class="itinerary-card" id="itinerary-normal-day-1">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day1.jpg" alt="Agatti Airport road transfer arrival">
+                            <div class="day-badge">Day 1</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Arrival & Island Sightseeing</h3>
+                            <p class="itinerary-subtitle">Airport Pickup & Cultural Exploration</p>
+                            <p class="itinerary-desc">
+                                Upon arrival at Agatti Airport, our team will receive you and provide road transfer to your room. After lunch, proceed for half-day island sightseeing to experience the traditions, customs, and culture of the local people of Lakshadweep.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Road transfer from Agatti Airport to room</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Half-day Agatti island sightseeing</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Local customs & culture immersion</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Card -->
+                    <div class="itinerary-card" id="itinerary-normal-day-2">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day2.jpg" alt="Dolphins spotting and fishing Agatti">
+                            <div class="day-badge">Day 2</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Dolphins & Fishing Excursion</h3>
+                            <p class="itinerary-subtitle">Open Sea Excursion</p>
+                            <p class="itinerary-desc">
+                                After breakfast, set sail into the open sea for dolphin watching and fishing. Savor a hot lunch provided directly on the boat. Return to Agatti Island in the evening, enjoy hot tea, and relax during your overnight stay.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Dolphin spotting cruise & open sea fishing</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Boat-deck lunch & evening refreshments</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Return to Agatti for overnight stay</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 3 Card -->
+                    <div class="itinerary-card" id="itinerary-normal-day-3">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day3.jpg" alt="Kalpitty Island sunset excursion">
+                            <div class="day-badge">Day 3</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Kalpitty Island Sunset Excursion</h3>
+                            <p class="itinerary-subtitle">Optional Water Sports & Sunset Views</p>
+                            <p class="itinerary-desc">
+                                Savor breakfast at the hotel, then choose to participate in optional water sports activities. After lunch, enjoy a 45-minute scenic boat transfer to the uninhabited Kalpitty Island. Spend the afternoon taking in the incredible sunset views, then return to Agatti for your final overnight stay.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Morning optional water sports</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Boat transfer to uninhabited Kalpitty Island (45 min)</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Golden Hour sunset watching & Return to Agatti</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Day 4 Card -->
+                    <div class="itinerary-card" id="itinerary-normal-day-4">
+                        <div class="itinerary-img-wrapper">
+                            <img src="images/day4.jpg" alt="Agatti airport departure flight home">
+                            <div class="day-badge">Day 4</div>
+                        </div>
+                        <div class="itinerary-details">
+                            <h3>Departure</h3>
+                            <p class="itinerary-subtitle">Sweet Memories of Lakshadweep</p>
+                            <p class="itinerary-desc">
+                                Enjoy your final breakfast in the island paradise. Complete checkout procedures, gather your bags, and transfer to Agatti Airport for your departure flight back home, carrying sweet memories of Lakshadweep.
+                            </p>
+                            <ul class="itinerary-bullets">
+                                <li><i class="fa-solid fa-check text-primary"></i> Checkout after morning breakfast</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Direct road transfer to Agatti Airport</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 & 5. Inclusions & Exclusions Section -->
+        <section class="inclusions-exclusions-section" id="inclusions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Important Details</span>
+                    <h2 class="section-title">Inclusions & Exclusions</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Monsoon Inclusions & Exclusions -->
+                <div class="inc-exc-grid pkg-monsoon-only">
+                    <!-- Inclusions Card -->
+                    <div class="inc-exc-card inclusion-card" id="inclusions-card-monsoon">
+                        <div class="card-header">
+                            <div class="header-icon-circle bg-green-light">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                            </div>
+                            <h3>What's Included (Monsoon)</h3>
+                        </div>
+                        <ul class="inc-exc-list">
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Food & AC Accommodation</strong>: Comfortable stay with all meals included (Breakfast, Lunch & Dinner).</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Personal Guide</strong>: Expert local guidance throughout your entire trip.</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Permit Documentation Work</strong>: All necessary Lakshadweep entry permits and papers arranged for you.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Exclusions Card -->
+                    <div class="inc-exc-card exclusion-card" id="exclusions-card-monsoon">
+                        <div class="card-header">
+                            <div class="header-icon-circle bg-red-light">
+                                <i class="fa-solid fa-circle-xmark text-red"></i>
+                            </div>
+                            <h3>What's Excluded (Monsoon)</h3>
+                        </div>
+                        <ul class="inc-exc-list">
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Scuba Diving</strong>: Optional activity available at <strong>₹3,500/- per head</strong>.</span></li>
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Flight Ticket</strong>: Domestic flights (We only provide land packages; assistance available).</span></li>
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Personal Expenses</strong>: Tipping, shopping, laundry, and items not listed in inclusions.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Normal Inclusions & Exclusions -->
+                <div class="inc-exc-grid pkg-normal-only">
+                    <!-- Inclusions Card -->
+                    <div class="inc-exc-card inclusion-card" id="inclusions-card-normal">
+                        <div class="card-header">
+                            <div class="header-icon-circle bg-green-light">
+                                <i class="fa-solid fa-circle-check text-green"></i>
+                            </div>
+                            <h3>What's Included (Regular Season)</h3>
+                        </div>
+                        <ul class="inc-exc-list">
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>AC Accommodation</strong>: Comfortable stays in Std AC Home/Hotel for 3 nights.</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Food</strong>: All delicious meals included (🍽️ Breakfast, Lunch & Dinner).</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Permits & Documentation</strong>: Lakshadweep entry permit charges and Heritage fees included.</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Transfers & Transport</strong>: Agatti Airport-to-room roundtrip road transfers.</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Sightseeing & Trips</strong>: Agatti Island sightseeing & Kalpitty Island boat excursion.</span></li>
+                            <li><i class="fa-solid fa-circle-check list-icon text-green"></i> <span><strong>Water Sports Activities</strong>: Complimentary Kayaking, Snorkeling, Coral Garden exploration, Dolphins watching, Fishing & Glass-bottom boat rides.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Exclusions Card -->
+                    <div class="inc-exc-card exclusion-card" id="exclusions-card-normal">
+                        <div class="card-header">
+                            <div class="header-icon-circle bg-red-light">
+                                <i class="fa-solid fa-circle-xmark text-red"></i>
+                            </div>
+                            <h3>What's Excluded (Regular Season)</h3>
+                        </div>
+                        <ul class="inc-exc-list">
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Flight Ticket</strong>: Airfares to/from Agatti (Land package only).</span></li>
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Scuba Diving</strong>: Underwater diving is optional and self-paid (₹3,500/head).</span></li>
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Night Fishing</strong>: Not included in standard excursions.</span></li>
+                            <li><i class="fa-solid fa-circle-xmark list-icon text-red"></i> <span><strong>Personal Expenses</strong>: Shopping, tipping, laundry, etc.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Photo Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Visual Journey</span>
+                    <h2 class="section-title">Photo Gallery</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" id="gallery-item-1">
+                        <img src="images/gallery1.jpg" alt="Pristine white sand beach in Lakshadweep" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Lakshadweep Lagoons</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-2">
+                        <img src="images/gallery2.jpg" alt="Vibrant corals and clear waters" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Crystal Clear Waters</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-3">
+                        <img src="images/gallery3.jpg" alt="Agatti beach views" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Agatti Gateways</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-4">
+                        <img src="images/gallery4.jpg" alt="Lagoon boating in Bangaram" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Lagoon Excursions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-5">
+                        <img src="images/gallery5.jpg" alt="Stunning marine biodiversity" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Coral Reefs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-6">
+                        <img src="images/gallery6.jpg" alt="Tropical palms over beach shore" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Tropical Palms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-7">
+                        <img src="images/gallery7.jpg" alt="Warm sunset rays over Lakshadweep beach" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Scenic Sunsets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" id="gallery-item-8">
+                        <img src="images/gallery8.jpg" alt="Relaxing beach lounge setup" class="gallery-image">
+                        <div class="gallery-item-overlay">
+                            <div class="overlay-content">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Island Leisure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Pricing Section -->
+        <section class="pricing-section" id="pricing">
+            <div class="container">
+                <div class="pricing-wrapper pkg-monsoon-only">
+                    <div class="pricing-info">
+                        <span class="pricing-badge">Monsoon Package Special</span>
+                        <h2 class="pricing-title">Special Monsoon Price</h2>
+                        <p class="pricing-subtitle">Experience the magic of the monsoons in Lakshadweep at an unbeatable rate.</p>
+                        
+                        <div class="pricing-offer-validity" id="pricing-validity">
+                            <i class="fa-solid fa-calendar-days text-turquoise"></i> Offer Valid: <strong>June, July, August</strong>
+                        </div>
+
+                        <div class="pricing-perks">
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>Best Price Guaranteed</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>No Hidden Booking Fees</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>Flexible Cancellation Options</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card" id="pricing-value-card-monsoon">
+                        <div class="card-glow"></div>
+                        <span class="pricing-duration">3 Days / 4 Nights</span>
+                        <div class="price-container">
+                            <span class="currency">₹</span>
+                            <span class="amount">10,999</span>
+                            <span class="period">Per Person</span>
+                        </div>
+                        <p class="price-disclaimer">Inclusive of premium stay, all meals, permitting, and activities as listed.</p>
+                        <hr class="card-divider">
+                        <a href="#contact" class="btn btn-primary btn-block btn-lg" id="pricing-book-btn-monsoon">Secure My Booking</a>
+                        <div class="secure-checkout">
+                            <i class="fa-solid fa-shield-halved"></i> 100% Safe & Secure Booking
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-wrapper pkg-normal-only">
+                    <div class="pricing-info">
+                        <span class="pricing-badge">Regular Season Package</span>
+                        <h2 class="pricing-title">Standard Season Price</h2>
+                        <p class="pricing-subtitle">Enjoy premium travel, dolphin spotting, and complete beach excursions.</p>
+                        
+                        <div class="pricing-offer-validity" id="pricing-validity-normal">
+                            <i class="fa-solid fa-calendar-days text-turquoise"></i> Validity: <strong>September - May</strong>
+                        </div>
+
+                        <div class="pricing-perks">
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>Std AC Home/Hotel Stay</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>Complimentary Kayak & Snorkel</span>
+                            </div>
+                            <div class="perk-item">
+                                <i class="fa-solid fa-circle-check text-turquoise"></i>
+                                <span>Dolphin Spotting & Kalpitty Excursion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-card" id="pricing-value-card-normal">
+                        <div class="card-glow"></div>
+                        <span class="pricing-duration">3 Nights / 4 Days</span>
+                        <div class="price-container">
+                            <span class="amount" style="font-size: 2.8rem; letter-spacing: -1px;">Best Rates</span>
+                        </div>
+                        <p class="price-disclaimer">Std AC Stays with all meals, transfers, permits, heritage fees, and excursions included.</p>
+                        <hr class="card-divider">
+                        <a href="#contact" class="btn btn-primary btn-block btn-lg" id="pricing-book-btn-normal">Request Custom Quote</a>
+                        <div class="secure-checkout">
+                            <i class="fa-solid fa-shield-halved"></i> 100% Safe & Secure Booking
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Terms & Conditions Section -->
+        <section class="terms-section" id="terms">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Booking Policies</span>
+                    <h2 class="section-title">Terms & Conditions</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="terms-grid">
+                    <!-- Column 1: Flight Booking -->
+                    <div class="terms-card" id="terms-card-flight">
+                        <div class="card-glow"></div>
+                        <div class="terms-icon-wrapper">
+                            <i class="fa-solid fa-plane-departure text-turquoise"></i>
+                        </div>
+                        <h3>Flight Booking</h3>
+                        <p class="terms-text-main">We only provide Land Packages. If needed, we can assist you with booking flight tickets.</p>
+                        <ul class="terms-list">
+                            <li><i class="fa-solid fa-circle-info text-turquoise"></i> <span>Company shall not be responsible for any cancellations done by airline companies.</span></li>
+                            <li><i class="fa-solid fa-circle-info text-turquoise"></i> <span>Company shall not be responsible for the refund amount for flight cancellations. Refund amounts are subject to airline policy.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Travel Disruptions -->
+                    <div class="terms-card" id="terms-card-disruptions">
+                        <div class="card-glow"></div>
+                        <div class="terms-icon-wrapper">
+                            <i class="fa-solid fa-triangle-exclamation text-yellow"></i>
+                        </div>
+                        <h3>Travel Disruptions</h3>
+                        <p class="terms-text-main">Important guidelines regarding natural delays or disruptions:</p>
+                        <ul class="terms-list">
+                            <li><i class="fa-solid fa-circle-exclamation text-yellow"></i> <span>Company shall not be responsible for travel breakups due to natural calamities, flight cancellations, flight delays, train delays, or hotel check-in delays.</span></li>
+                            <li><i class="fa-solid fa-circle-exclamation text-yellow"></i> <span>Company can only provide refund amounts that the airline itself provides.</span></li>
+                            <li><i class="fa-solid fa-circle-exclamation text-yellow"></i> <span>Tickets are only issued after you accept these terms. Please clear any doubts before ticket issuance.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Package Cancellation -->
+                    <div class="terms-card highlight-card-border" id="terms-card-cancellation">
+                        <div class="card-glow"></div>
+                        <div class="terms-icon-wrapper">
+                            <i class="fa-solid fa-ban text-red"></i>
+                        </div>
+                        <h3>Cancellation Policy</h3>
+                        <ul class="terms-list">
+                            <li><i class="fa-solid fa-circle-xmark text-red"></i> <span>Company shall not be responsible for any package cancellation refunds due to travel disruptions or airline actions.</span></li>
+                            <li><i class="fa-solid fa-circle-xmark text-red"></i> <span>Package refunds have limitations. Refund amounts are processed only after deducting service and cancellation charges.</span></li>
+                            <li><i class="fa-solid fa-circle-xmark text-red"></i> <span>No refund will be given for quick cancellations made when travel dates are near.</span></li>
+                            <li><i class="fa-solid fa-triangle-exclamation text-yellow"></i> <span><strong>Note:</strong> Excursion activities depend on weather conditions. No refunds for package cancellations.</span></li>
+                        </ul>
+                        <div class="operator-badge">
+                            <span class="operator-title">Official Brand</span>
+                            <span class="operator-name">Pure Voyage</span>
+                            <span class="operator-hubs">Journeys That Stay With You</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact & Booking Form Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-panel" id="contact-info-panel">
+                        <span class="section-tag color-white">Get in Touch</span>
+                        <h2 class="contact-panel-title">Let's Plan Your Trip</h2>
+                        <p class="contact-panel-desc">Have questions about the itinerary, customisations, or dates? Feel free to reach out. Our destination experts are available 24/7.</p>
+                        
+                        <div class="contact-details-list">
+                            <a href="tel:+918593895718" class="contact-detail-item" id="contact-phone">
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Phone Call</span>
+                                    <span class="detail-value">+91 8593895718</span>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/918593895718" target="_blank" class="contact-detail-item" id="contact-whatsapp">
+                                <div class="icon-circle">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">WhatsApp</span>
+                                    <span class="detail-value">+91 8593895718</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:purevoyage9@gmail.com" class="contact-detail-item" id="contact-email">
+                                <div class="icon-circle">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Email Address</span>
+                                    <span class="detail-value">purevoyage9@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="https://instagram.com/lakshadweep_adventure" target="_blank" class="contact-detail-item" id="contact-instagram">
+                                <div class="icon-circle">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Instagram</span>
+                                    <span class="detail-value">@lakshadweep_adventure</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Booking Form -->
+                    <div class="contact-form-panel" id="contact-form-panel">
+                        <h3>Book Lakshadweep Escape</h3>
+                        <p class="form-instructions">Fill in the details below to submit a reservation request directly to our team via WhatsApp.</p>
+                        
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-group">
+                                <label for="form-name">Your Full Name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-phone">Phone / WhatsApp</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-mobile-screen input-icon"></i>
+                                        <input type="tel" id="form-phone" placeholder="Your Number" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-date">Departure Date</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-calendar input-icon"></i>
+                                        <input type="date" id="form-date" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-guests">Number of Guests</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-users input-icon"></i>
+                                    <select id="form-guests" required>
+                                        <option value="" disabled selected>Select Guests</option>
+                                        <option value="1 Guest">1 Person</option>
+                                        <option value="2 Guests">2 Persons (Twin Share)</option>
+                                        <option value="3 Guests">3 Persons</option>
+                                        <option value="4 Guests">4 Persons</option>
+                                        <option value="5+ Guests">5+ Persons (Group)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Special Requests / Customisations</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-comment-dots textarea-icon"></i>
+                                    <textarea id="form-message" rows="3" placeholder="Tell us if you want water sports, double beds, or custom travel plans..."></textarea>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="form-submit-btn">
+                                <i class="fa-brands fa-whatsapp"></i> Send Booking Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo.png" alt="Pure Voyage Logo" class="logo-img">
+                        <span class="logo-text">Pure Voyage</span>
+                    </a>
+                    <p class="footer-tagline">"Journeys That Stay With You"</p>
+                    <p class="footer-about">Crafting high-end, immersive, and custom tropical travel itineraries across Lakshadweep's most exotic island coves.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#highlights">Highlights</a></li>
+                        <li><a href="#itinerary">Itinerary</a></li>
+                        <li><a href="#inclusions">Inclusions & Permitting</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#pricing">Package Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-socials">
+                    <h4>Connect Socially</h4>
+                    <p>Follow our adventure channels for regular updates, guest reels, and booking giveaways.</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/lakshadweep_adventure" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/918593895718" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:purevoyage9@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pure Voyage. All Rights Reserved. Designed for premium tourism experiences.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Lightbox Element -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image Lightbox">
+        <span class="close-lightbox" id="close-lightbox">&times;</span>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-content" id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/918593895718?text=Hi%20Pure%20Voyage%2C%20I%20am%20interested%20in%20booking%20the%20Lakshadweep%20Monsoon%20Special%20package." target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Book on WhatsApp</span>
+    </a>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
